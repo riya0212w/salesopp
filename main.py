@@ -2,13 +2,11 @@ from azure.storage.blob.aio import BlobServiceClient  # Async version of BlobSer
 import pandas as pd
 import io
 import re
-from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 import os
 import logging
  
 # Load environment variables
-load_dotenv()
  
 # FastAPI setup
 app = FastAPI()
